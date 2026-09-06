@@ -18,6 +18,14 @@ export const siteConfig = {
       benefits: ['Unlimited data', 'Everyday browsing & work from home', 'Xstream Play included'],
     },
     {
+      name: 'Value',
+      speed: '40 Mbps',
+      price: '699',
+      data: 'Unlimited',
+      planType: 'Wi-Fi + TV + OTT',
+      benefits: ['HD/SD 350+ channels', 'JioHotstar included', 'Xstream Play included'],
+    },
+    {
       name: 'Fast Wi-Fi',
       speed: '100 Mbps',
       price: '799',
@@ -40,7 +48,7 @@ export const siteConfig = {
       price: '999',
       data: 'Unlimited',
       planType: 'Wi-Fi + TV + OTT',
-      benefits: ['Unlimited data', 'HD/SD 350+ channels', 'JioHotstar + Xstream Play'],
+      benefits: ['Unlimited data', 'Netflix + Amazon Prime included', 'JioHotstar + Zee5 + Xstream Play'],
     },
     {
       name: 'Ultimate TV',
