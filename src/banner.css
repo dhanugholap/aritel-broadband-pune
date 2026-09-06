@@ -1,0 +1,198 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.hero-visual {
+  position: relative !important;
+  height: min(620px, 72vw) !important;
+  min-height: 430px;
+  background: #fff
+    url("./assets/WhatsApp Image 2026-09-03 at 4.33.05 PM.jpeg")
+    center / contain no-repeat !important;
+  overflow: hidden;
+  box-shadow: 12px 14px 0 var(--lime);
+  animation: heroFloat 4s ease-in-out infinite;
+}
+
+.hero-visual > * {
+  display: none !important;
+}
+
+/* FAQ */
+.faq-section .faq-title,
+.faq-section .faq-title h2,
+.faq-section .faq-title .eyebrow {
+  color: #172033 !important;
+}
+
+.faq-section .faq-list,
+.faq-section .faq {
+  background: #fff !important;
+}
+
+.faq-section .faq {
+  border-bottom: 1px solid #dbe3ec;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.faq-section .faq:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 16px rgba(18, 100, 163, 0.12);
+}
+
+.faq-section .faq button {
+  width: 100%;
+  padding: 20px 0;
+  border: 0;
+  background: #fff !important;
+  color: #172033 !important;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.25s ease;
+}
+
+.faq-section .faq button:hover,
+.faq-section .faq.open button {
+  color: #1264a3 !important;
+}
+
+.faq-section .faq button svg {
+  color: #1264a3 !important;
+}
+
+.faq-section .faq p {
+  margin: 0;
+  padding: 0 36px 20px 0;
+  background: #fff !important;
+  color: #5b6878 !important;
+  line-height: 1.7;
+}
+
+/* Sections animation */
+section {
+  animation: sectionReveal 0.8s ease both;
+}
+
+@keyframes sectionReveal {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Hero floating animation */
+@keyframes heroFloat {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+/* Logo animation */
+header img,
+.logo,
+.brand-logo {
+  transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+header img:hover,
+.logo:hover,
+.brand-logo:hover {
+  transform: scale(1.08);
+  filter: drop-shadow(0 5px 8px rgba(18, 100, 163, 0.25));
+}
+
+/* Call and WhatsApp buttons */
+a[href^="tel:"],
+a[href*="wa.me"],
+.call-button,
+.call-btn,
+.whatsapp-button,
+.whatsapp-btn {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: contactPulse 2.5s ease-in-out infinite;
+}
+
+a[href^="tel:"]:hover,
+a[href*="wa.me"]:hover,
+.call-button:hover,
+.call-btn:hover,
+.whatsapp-button:hover,
+.whatsapp-btn:hover {
+  transform: translateY(-6px) scale(1.08);
+  box-shadow: 0 10px 25px rgba(18, 100, 163, 0.3);
+}
+
+a[href*="wa.me"],
+.whatsapp-button,
+.whatsapp-btn {
+  animation-delay: 0.6s;
+}
+
+@keyframes contactPulse {
+  0%,
+  100% {
+    box-shadow: 0 0 0 0 rgba(18, 100, 163, 0.35);
+  }
+
+  50% {
+    box-shadow: 0 0 0 11px rgba(18, 100, 163, 0);
+  }
+}
+
+/* Buttons and links */
+button,
+a {
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+button:hover,
+a:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+  .hero-visual {
+    height: 520px !important;
+    min-height: 0;
+    box-shadow: 8px 10px 0 var(--lime);
+    animation-duration: 5s;
+  }
+
+  .faq-section .faq:hover {
+    transform: none;
+  }
+
+  .faq-section .faq button {
+    padding: 16px 0;
+    font-size: 15px;
+  }
+
+  .faq-section .faq p {
+    padding: 0 0 16px;
+    font-size: 14px;
+  }
+}
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}
