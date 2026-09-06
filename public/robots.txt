@@ -1,8 +1,4 @@
 User-agent: *
 Allow: /
-
-# Sitemaps
-Sitemap: https://aritelbroadband.netlify.app/sitemap.xml
-
-# Crawl-delay
+Sitemap: https://aritel-broadband-pune.netlify.app/sitemap.xml
 Crawl-delay: 1
